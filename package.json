@@ -8,6 +8,10 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.13"
+    "nuxt": "3.0.0-rc.13",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.56.0",
+    "sass-loader": "^10.3.1"
   }
 }
