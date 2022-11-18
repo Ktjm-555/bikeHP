@@ -59,4 +59,22 @@ header {
     }
   }
 }
+
+@media screen and (max-width:600px)   {
+  header {
+
+    .header_container {
+    
+      .logo_wrapper {
+        justify-content: start;
+        margin: 10px;
+      }
+      
+      nav {
+        justify-content: flex-end;
+        margin: 10px;
+      }
+    }
+  }
+}
 </style>
