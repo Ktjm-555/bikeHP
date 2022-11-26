@@ -172,6 +172,10 @@ html {
 }
 </style>
 <style lang="scss" scoped>
+a {
+  text-decoration:none;
+}
+
 p {
   margin: 0;
 }
@@ -474,7 +478,198 @@ align-items: center;
   }
 }
 
+// SP
+@media screen and (max-width: 900px) {
 
+  .wrapper {
+    margin-left: 0 !important;
+    box-sizing: border-box;
+  }
 
+  .logo {
+    width: 80px;
+    margin: 8px 0;
+  }
 
+  .section-title {
+    margin-bottom: 34px;
+  }
+  .section-title .ja {
+    margin-bottom: 24px;
+  }
+
+// ヘッダー
+ #header {
+  .inner {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .logo {
+      margin-top: 0;
+    }
+
+    nav {
+      width: 100%;
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    
+  }
+    
+  .contact {
+    display: none;
+  }
+} 
+
+// Mainvisual 
+
+  #mainvisual {
+    margin-bottom: 80px;
+  }
+
+// News
+  
+  #news {
+    margin-bottom: 80px;
+
+    .list {
+      flex-direction: column;
+
+      li {
+        width: 100%;
+        border-right: none;
+        padding: 10px 0;
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // About
+  #about {
+    flex-direction: column;
+    margin-bottom: 80px;
+
+    .img {
+      width: 100%;
+      margin-bottom: 30px;
+
+      img {
+        height: 300px;
+      }
+    }
+
+    .text {
+      width: 100%;
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
+  }
+
+  // Business
+  #business {
+    margin-bottom: 80px;
+    margin-left: 0 !important;
+
+    .flex {
+      flex-direction: column;
+      padding: 0;
+
+      .left {
+        width: 100%;
+        margin: 0 0 30px 0;
+      }
+
+      .right {
+        width: 100%;
+      }
+
+      .item {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .title {
+        text-align: left;
+      }
+    }
+  }
+  
+
+  // Company
+  /*
+  「position: static;」でrelativeを解除
+  */
+  #company {
+    height: auto;
+    flex-direction: column;
+    position: static;
+    margin-bottom: 0;
+
+    .text {
+      width: 100%;
+      padding: 40px 20px;
+      margin-bottom: 20px;
+      //「position: static;」でabsoluteを解除
+      position: static;
+      box-sizing: border-box;
+    }
+
+    .img {
+      width: 100%;
+      padding: 0;
+      position: static;
+
+      img {
+        height: 300px;
+      }
+    }
+
+    .info {
+      flex-direction: column;
+
+      dt {
+        width: 80%;
+        margin-top: 20px;
+      }
+
+      dd {
+        width: 80%;
+        margin-top: 5px;
+        padding-left: 14px;
+        box-sizing: border-box;
+
+        &:first-of-type {
+          margin-top: 5px;
+        }
+      }
+
+      .add {
+        margin-left: 0;
+      }
+    }
+  }
+
+  // footer
+  #footer {
+    .flex {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .logo {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
 </style>
