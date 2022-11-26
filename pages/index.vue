@@ -1,7 +1,4 @@
 <script setup>
-console.log('hello script setup')
-
-
 </script>
 <template>
 <div>
@@ -40,7 +37,7 @@ console.log('hello script setup')
           </div>
           <div class="datail_text">
             <p class="bicycle_detail_title">タイトルタイトル</p>
-            <p class="bicycle_detail_text">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミー
+            <p class="bicycle_detail_text">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
 </p>
           </div>
         </div>
@@ -71,7 +68,8 @@ console.log('hello script setup')
 
 </div>
 </template>
-<style>
+<style lang="scss" scoped>
+
 * {
   padding: 0;
   margin: 0;
@@ -268,14 +266,17 @@ html {
               }
 
               .detail_image {
-                width: 345px;
-                height: 228px;
+                min-width: 345px;
+                width: 100%;
+                min-height: 228px;
+                height: 100%;
+              }
+
+              .datail_text {
+                width: auto;
+                margin-bottom: 30px;
               }
             }
-          }
-
-          .datail_text {
-            margin-bottom: 30px;
           }
         }
       }
