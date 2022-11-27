@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const route = useRoute();
-const { id } = route.query;
+const {id} = route.query;
 const articles = [{
   id: 1,
   title: "Nuxt3入門",
@@ -16,32 +16,11 @@ article.value = articles.find(article => +id === article.id)
 
 <template>
   <div>
-    <header>Nuxt3サンプルアプリケーション</header>
-    <div class="container">
-      <article v-if="article">
-        <p>タイトル：{{ article.title }}</p>
-        <hr />
-        <div style="width: 500px">{{ article.content }}</div>
-      </article>
-      <NuxtLink to="/">戻る</NuxtLink>
-    </div>
-    <footer>
-      © 2022 mamezou-tech
-    </footer>
+    <article v-if="article">
+      <p>タイトル：{{ article.title }}</p>
+      <hr />
+      <div style="width: 500px">{{ article.content }}</div>
+    </article>
+    <NuxtLink to="/">戻る</NuxtLink>
   </div>
 </template>
-
-<style scoped>
-header {
-  border-bottom-style: solid;
-  padding: 1rem;
-}
-footer {
-  margin-top: 2rem;
-  background-color: #8080ee;
-  padding: 1rem;
-}
-.container {
-  margin: 2rem;
-}
-</style>
