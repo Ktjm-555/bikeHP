@@ -1,17 +1,8 @@
 <script setup lang="ts">
 const route = useRoute();
-const {id} = route.query;
-const articles = [{
-  id: 1,
-  title: "Nuxt3入門",
-  content: "Nuxt3が公式リリースされました。Nuxt3ではVue3対応だけでなく、NitroやVite等様々な改善が施されています。"
-}, {
-  id: 2,
-  title: "Jest再入門",
-  content: "今回はJestのモックについて整理していきます。Jestはビルトインでマッチャーが提供され、これ単体で多くのユースケースをサポートします。"
-}];
-const article = ref<{id: number, title: string, content: string}>(null);
-article.value = articles.find(article => +id === article.id)
+const { id } = route.query;
+const { article, fetchArticle } = useArticles();
+fetchArticle(+id);
 </script>
 
 <template>
@@ -22,5 +13,7 @@ article.value = articles.find(article => +id === article.id)
       <div style="width: 500px">{{ article.content }}</div>
     </article>
     <NuxtLink to="/">戻る</NuxtLink>
+    <!-- ↓追加 -->
+    <Advertisement />
   </div>
 </template>
