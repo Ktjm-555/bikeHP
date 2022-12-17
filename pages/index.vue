@@ -1,19 +1,34 @@
 <script setup lang="ts">
-const { fetchArticles, articles } = useArticles();
-fetchArticles();
-</script>
+import { vOnClickOutside } from '@vueuse/components';
 
+const state = reactive({
+  display: false,
+});
+
+</script>
 <template>
-  <div>
-    <p>新着記事！！</p>
-    <ul>
-      <li v-for="article in articles" :key="article.id">
-        <NuxtLink :to="{path: '/details', query: { id:article.id }}">{{
-            article.title
-          }}
-        </NuxtLink>
-      </li>
-    </ul>
-    <Advertisement />
+  <button @click.stop="state.display = !state.display">
+    buttonClick!!  
+  </button>
+  
+  <div class="content" 
+    v-if="state.display" 
+    v-on-click-outside.bubble="() => state.display = false">
+    Hello World
   </div>
 </template>
+<style>
+button {
+  position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.content {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  border: solid 1px;
+  padding: 10px;
+}
+</style>
