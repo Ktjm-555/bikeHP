@@ -384,7 +384,7 @@
   "resolved" "https://registry.npmjs.org/@nuxt/devalue/-/devalue-2.0.0.tgz"
   "version" "2.0.0"
 
-"@nuxt/kit@^3.0.0", "@nuxt/kit@^3.0.0-rc.14", "@nuxt/kit@3.0.0":
+"@nuxt/kit@^3.0.0-rc.14", "@nuxt/kit@3.0.0":
   "integrity" "sha512-7ZsOLt5s9a0ZleAIzmoD70JwkZf5ti6bDdxl6f8ew7Huxz+ni/oRfTPTX9TrORXsgW5CvDt6Q9M7IJNPkAN/Iw=="
   "resolved" "https://registry.npmjs.org/@nuxt/kit/-/kit-3.0.0.tgz"
   "version" "3.0.0"
@@ -833,17 +833,6 @@
   "integrity" "sha512-M7WsAgw28FNtTH0bzsGuHEtJOPJqPpyeHS6PHq+8UesLgNjZ9waMAntiUrgUQlxt09M4i2lH7y9sRi0jkfeXGA=="
   "resolved" "https://registry.npmjs.org/@vueuse/metadata/-/metadata-9.7.0.tgz"
   "version" "9.7.0"
-
-"@vueuse/nuxt@^9.7.0":
-  "integrity" "sha512-wXwg3h4AJNLB0EJzB5O7yPyDH3bCNl0dGzBVP1i2pS569TJnnUc6USZ6htbH3XXEflD3Lr0fM/0vkulOxQHHNw=="
-  "resolved" "https://registry.npmjs.org/@vueuse/nuxt/-/nuxt-9.7.0.tgz"
-  "version" "9.7.0"
-  dependencies:
-    "@nuxt/kit" "^3.0.0"
-    "@vueuse/core" "9.7.0"
-    "@vueuse/metadata" "9.7.0"
-    "local-pkg" "^0.4.2"
-    "vue-demi" "*"
 
 "@vueuse/shared@9.7.0":
   "integrity" "sha512-pwmt1y3TJ2s5KqWmkv9ZKEV59GwuZQZk8XLiU+hGswz0jej318ozbea9E4A/A50ksyM26swSFr7sZ9llNPsZHg=="
@@ -3228,7 +3217,7 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
-"nuxt@^3.0.0", "nuxt@3.0.0":
+"nuxt@3.0.0":
   "integrity" "sha512-RNlD78uv04ZiXWmlx9f1tnJfrqsYAWHU+4gbgOTQpIBmQzHWPWiox+fm/1m93iKfEd5sJi9TJUoXX5yBObVZYw=="
   "resolved" "https://registry.npmjs.org/nuxt/-/nuxt-3.0.0.tgz"
   "version" "3.0.0"

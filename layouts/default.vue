@@ -11,6 +11,11 @@
 </template>
 
 <style scoped>
+header {
+  position:absolute;
+  top:100px;
+  left:100px;
+}
 /* header {
   border-bottom-style: solid;
   padding: 1rem;

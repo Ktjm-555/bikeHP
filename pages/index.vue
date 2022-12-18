@@ -10,9 +10,8 @@ const state = reactive({
   <button @click.stop="state.display = !state.display">
     buttonClick!!  
   </button>
-  
   <div class="content" 
-    v-if="state.display" 
+    v-show="state.display" 
     v-on-click-outside.bubble="() => state.display = false">
     Hello World
   </div>
