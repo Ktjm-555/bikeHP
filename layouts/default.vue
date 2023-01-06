@@ -1,17 +1,22 @@
 <template>
   <div>
-    <header>Nuxt3サンプルアプリケーション</header>
+    <header>Nuxt3 VueUse onClickOutside</header>
     <div class="container">
       <slot />
     </div>
     <footer>
-      © 2022 mamezou-tech
+   
     </footer>
   </div>
 </template>
 
 <style scoped>
 header {
+  position:absolute;
+  top:100px;
+  left:100px;
+}
+/* header {
   border-bottom-style: solid;
   padding: 1rem;
 }
@@ -22,5 +27,5 @@ footer {
 }
 .container {
   margin: 2rem;
-}
+} */
 </style>
